@@ -1,0 +1,101 @@
+.title-text {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 72px;
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+
+/* Buttons */
+
+.button {
+    padding: 0.8rem 2.2rem;
+    width: 500;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: 0.4s linear;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+    background:whitesmoke;
+    background-clip: padding-box;
+    color: black;   
+    transition: linear 0.4s;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-color);
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+}
+
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    transition: linear 0.4s;
+
+}
+
+p.para {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1 {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 40px;
+}
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 50;
+    transition: background 1s ease;
+}
+
+

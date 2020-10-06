@@ -1,0 +1,450 @@
+
+
+/* CSS VARIABLE */
+@import url(/css/partials/_variable.css);
+
+/* CSS GLOBAL */
+
+@import url(/css/partials/_global.css);
+
+
+/* -----------Start Navigation-----------*/
+
+
+
+
+
+.header_area {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem ;
+}
+
+.header_area .main-menu .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--title-color);
+    line-height: 2px;
+    font-size: 15px;
+}
+
+.header_area .main-menu .navbar-nav .active a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.header_area.sticky {
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    transition: 0.4s linear;
+
+    
+    
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 0 2rem 0 6.5rem;
+    
+}
+
+.navbar-light .navbar-brand {
+
+    font-family: 'Bad Script', cursive;
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#navbarNav {
+    background: #fff;
+    transition: 0.4s linear;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-collapse {
+  
+}
+
+
+
+
+
+
+
+/* -----------End Navigation-----------*/
+
+
+/* -----------Start Banner Area-----------*/
+.site-main .site-banner .site-title h3 {
+    padding-top: 25%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 18vw;
+    background: black;
+    margin-left: 5%;
+    transform: translateY(-10px);
+
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 4rem;
+
+}
+.site-main .site-banner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image img {
+    padding: 6rem 0;
+    width: 90rem;
+}
+
+/* -----------End Banner-------------*/
+
+
+/* START ABOUT AREA */
+
+.site-main .about-area {
+    padding: 7rem 5rem;
+}
+
+.site-main .about-area h2 span {
+    display: block;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 60px;
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .paragraph p {
+   padding: 0.4rem 0; 
+}
+/* END ABOUT AREA */
+
+/* START BRAND AREA */
+
+.site-main .brand-area {
+    padding: 1rem 6rem;
+    margin-bottom: 4rem;
+}
+.site-main .brand-area .first-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.site-main .brand-area .first-row .col-lg-4 .singer-brand {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: 0.9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .singer-brand img {
+    width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .singer-brand:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1) ;
+}
+.site-main .brand-area .first-row .col-lg-4 .singer-brand:hover img {
+    filter: brightness(0.15);
+}
+.site-main .brand-area .experience-area {
+    padding-left: 1rem;
+}
+.experience-area span {
+    display: block;
+}
+.years-area {
+    background: url(/img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.bg-panel {
+    position: absolute;
+    left: -190px;top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.years-area .years {
+    font-size: 84px;
+    font-weight: bold;
+    line-height: 40px;
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.years-area h2 span {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.call-area {
+    padding-left: 10rem;
+}
+
+
+
+/* END BRAND AREA */
+
+
+/* START SERVICES AREA */
+.services-area {
+    padding: 7rem 2rem;
+
+}
+.services-title {
+    padding: 0 14rem;
+}
+
+.services-title h1 {
+    font-size: 35px;
+}
+
+.services-area .services-list .services {
+    background: rgba(248, 252, 253, 0.973);
+    transition: linear 0.4s;
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem 0.5rem;
+    
+    
+}
+.services-area .services-list .services:hover {
+    transform: translateY(-15px);
+    transition: linear 0.4s;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* END SERVICES AREA */
+
+
+/* START PROJECT AREA */
+.project-area {
+    padding: 4rem 0;
+}
+.project-area .button-group button {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130px;
+    text-transform: uppercase;
+
+}
+
+.project-area .button-group button + button {
+    padding-left: 3rem;
+}
+
+.project-area .our-project .title h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 12px;
+    
+}
+
+.project-area .our-project .img {
+    width: 100%;
+}
+
+
+.our-project img {
+    width: 100%;
+    height: auto;
+} 
+
+.project-area .our-project .img:hover{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* END PROJECT AREA */
+
+
+/* ABOUT ME */
+
+.about-area .about-title p {
+    padding: 1rem 0;
+}
+
+.about-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0;
+
+}
+.about-area .client img {
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.about-area .client .about-client {
+    padding-top: 2rem;
+}
+.about-area .client .about-client h4 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;
+}
+
+.about-area .client .about-client p {
+    font-size: 14px;
+}
+
+.about-area .owl-item {
+    justify-content: center;
+    display: flex;
+    padding: 0 1.5rem;
+}
+.about-area .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+/* END ABOUT ME */
+
+
+/* Subscribe me area */
+
+.subscribe-us-area .subscribe {
+    background: url(/img/subscribe-bg.png);
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+
+.subscribe-us-area .subscribe .subcrible-title h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: whitesmoke;
+}
+.subscribe-us-area .subscribe .subcrible-title p {
+    color: whitesmoke;
+    padding: 1rem 4rem;
+
+}
+.subscribe-us-area .subscribe .input-textbox input {
+    width: 400px;
+    padding: 0.9rem 1rem;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    outline: none;
+}
+.subscribe-us-area .subscribe .input-textbox input::placeholder {
+    color: whitesmoke;
+}
+
+.subscribe-us-area .btn-submit button {
+    background: white;
+    padding: 0.7rem 2rem;
+}
+/* End Subscribe me area */
+
+
+
+/* Footer area */
+.fotter-area {
+    padding: 5rem 0;
+    background: url(/img/footer-bg.png);
+}
+
+.fotter-area .social h5 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+
+}
+
+.fotter-area .social a i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+.fotter-area .social a i:hover {
+    color: var(--gradient-color);
+}
+
+.logo-footer {
+
+    font-family: 'Bad Script', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 24px;
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* End Footer area */
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    .navbar-brand {
+        padding: 0 2rem 0 1.6rem;
+
+    }
+}
+
+
+
